@@ -7,15 +7,21 @@ int main(int argc, char *argv[]) {
 	
 	int i;
 	int grade[5];
-	
-	grade[0]=10;
-	grade[1]=20;
-	grade[2]=30;
-	grade[3]=40;
-	grade[4]=50;
+	int score[5];
 	
 	for(i=0;i<5;i++)
-	printf("grade[%d]=%d\n",i,grade[i]);
+	{
+		grade[i]=rand()%100; 
+	}
+	
+	for(i=0;i<5;i++)
+	{
+		score[i]=grade[i];
+	}
+	for(i=0;i<5;i++)
+	{
+		printf("score[%d]=%d\n",i,score[i]);
+	}
 	
 	return 0;
 }
